@@ -1,0 +1,13 @@
+<html>
+    <body>
+    </body>
+    <script type="application/javascript">
+      fetch('https://k01plujvfe.execute-api.us-east-1.amazonaws.com/dev', { method: 'GET' })
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (json) {
+          document.write('<h1>' + json.aija + '</h1>')
+        });
+    </script>
+</html>
